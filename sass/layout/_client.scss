@@ -1,0 +1,98 @@
+.client {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients {
+  @extend %list;
+
+  @media screen and (min-width: 320px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: calc(-1 * $flex-gap);
+  }
+}
+
+.client__item {
+  @media screen and (min-width: 320px) {
+    // flex-basis: calc((100% - 6 * 15px) / 3);
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    // flex-basis: calc((100% - 6 * 15px) / 3);
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: $flex-gap;
+  }
+
+  &:first-child {
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.client__link {
+  border: 1px solid $fill-color;
+  border-radius: 4px;
+  @include centeredFlex(inline-flex);
+  fill: $fill-color;
+  transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 320px) {
+    width: 210px;
+    height: 90px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 90px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+    width: 170px;
+    height: 90px;
+  }
+  &:hover,
+  :focus {
+    border: 1px solid $accent-color;
+    cursor: pointer;
+    transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.client__logo {
+  fill: $fill-color;
+
+  .client__link:hover &,
+  .client__link:focus & {
+    fill: $accent-color;
+    cursor: pointer;
+    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

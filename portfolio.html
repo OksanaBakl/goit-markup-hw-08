@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__line">
+            <nav class="header__nav">
+                <a href="" class="logo" lang="en"><span class="logo__web">Web</span>Studio</a>
+                <ul class="nav">
+                    <li class="nav__item"><a href="./index.html" class="nav__link ">Студия</a></li>
+                    <li class="nav__item"><a href="" class="nav__link current">Портфолио</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <ul class="contact">
+                    <li class="nav__item">
+                        <div>
+                            <a href="email:info@devstudio.com" class="nav__link nav__email list">
+                                <svg class="nav__icon" Width="16px" Height="12px">
+                                    <use href="./images/symbol-defs5.svg#envelope"></use>
+                                </svg>info@devstudio.com</a>
+                        </div>
+                    </li>
+                    <li class="nav__item"><a href="tel:+380961111111" class="nav__link nav__tel list">
+                            <svg class="nav__icon" Width="10px" Height="16px">
+                                <use href="./images/symbol-defs5.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<main>
+        <!--filters-->
+<section  class="container__filters">
+    <div class="container">
+<ul class="filters list">
+    <li><button type="button" class="button__filter current">Все</button></li>
+    <li><button type="button" class="button__filter">Веб-сайты</button></li>
+    <li><button type="button" class="button__filter">Приложения</button></li>
+    <li><button type="button" class="button__filter">Дизайн</button></li>
+    <li><button type="button" class="button__filter">Маркетинг</button></li>
+</ul>
+
+<ul class="portfolio list">
+
+    <li class="portfolio__item">
+        <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+    <article class="portfolio__card">
+        <div class="portfolio__img">
+        <img src="./images/portfolio/laptop.jpg" alt="открытый ноутбук">
+        <p class="portfolio__overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+            для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+    </div>
+    <div class="portfolio__content">
+        <h2 class="portfolio__name">Технокряк</h2>
+        <p class="portfolio__description">Веб-сайт</p>
+                </div>
+    </article>
+       </a>
+    </li>
+
+        
+    <li class="portfolio__item">
+        <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+    <article class="portfolio__card">
+        <div class="portfolio__img">
+        <img src="./images/portfolio/basket.jpg" alt="игра в  баскетбол"  >
+    <p class="portfolio__overlay"></p>
+    </div>
+    <div class="portfolio__content">
+        <h2 class="portfolio__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+        <p class="portfolio__description">Дизайн</p>
+        </div>
+    </article>
+       </a>
+    </li>
+
+    <li class="portfolio__item">
+        <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+            <article class="portfolio__card">
+                <div class="portfolio__img">
+                    <img src="./images/portfolio/seafood.jpg" alt="лого ресторана" >
+                <p class="portfolio__overlay"></p>
+                </div>
+            <div class="portfolio__content">
+                    <h2 class="portfolio__name">Ресторан <span lang="en">Seafood</span></h2>
+                    <p class="portfolio__description">Приложение</p>
+                </div>
+            </article>
+        </a>
+    </li>
+
+    <li class="portfolio__item">
+        <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+            <article class="portfolio__card">
+                <div class="portfolio__img">
+                    <img src="./images/portfolio/headphones.jpg" alt="наушники ">
+                <p class="portfolio__overlay"></p>
+                </div>
+                <div class="portfolio__content">
+                    <h2 class="portfolio__name">Проект <span lang="en">Prime</span></h2>
+                    <p class="portfolio__description">Маркетинг</p>
+                </div>
+            </article>
+        </a>
+    </li>
+    
+        <li class="portfolio__item">
+            <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+                <article class="portfolio__card">
+                    <div class="portfolio__img">
+                        <img src="./images/portfolio/box.jpg" alt="две коробки " >
+                    <p class="portfolio__overlay"></p>
+                    </div>
+                    <div class="portfolio__content">
+                        <h2 class="portfolio__name">Проект <span lang="en">Boxes</span></h2>
+                        <p class="portfolio__description">Приложение </p>
+                    </div>
+                </article>
+            </a>
+        </li>
+
+        <li class="portfolio__item">
+            <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+                <article class="portfolio__card">
+                    <div class="portfolio__img">
+                        <img src="./images/portfolio/screen.jpg" alt="большой монитор" >
+                    <p class="portfolio__overlay"></p>
+                    </div>
+                    <div class="portfolio__content">
+                        <h2 class="portfolio__name" lang="en">Inspiration has no Borders</h2>
+                        <p class="portfolio__description">Веб-сайт </p>
+                    </div>
+                </article>
+            </a>
+        </li>
+
+        <li class="portfolio__item">
+            <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+                <article class="portfolio__card">
+                    <div class="portfolio__img">
+                        <img src="./images/portfolio/book.jpg" alt="открытая крига" >
+                    <p class="portfolio__overlay"></p>
+                    </div>
+                    <div class="portfolio__content">
+                        <h2 class="portfolio__name">Издание <span lang="en">Limited Edition</span>></h2>
+                        <p class="portfolio__description">Дизайн</p>
+                    </div>
+                </article>
+            </a>
+        </li>
+
+        <li class="portfolio__item">
+            <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+                <article class="portfolio__card">
+                    <div class="portfolio__img">
+                        <img src="./images/portfolio/tag.jpg" alt="изображен белый ярлык с надписью лейбел тег" >
+                    <p class="portfolio__overlay"></p>
+                    </div>
+                    <div class="portfolio__content">
+                            <h2 class="portfolio__name">Проект <span lang="en">LAB</span></h2>
+                        <p class="portfolio__description">Маркетинг</p>
+                    </div>
+                </article>
+            </a>
+        </li>
+
+        <li class="portfolio__item">
+            <a href="#" class="portfolio__link link" target="_blank" rel="noreferrer noopener">
+                <article class="portfolio__card">
+                    <div class="portfolio__img">
+                    <img src="./images/portfolio/laptop_hands.jpg" alt="руки на ноутбуке" >
+                    <p class="portfolio__overlay"></p>
+                    </div>
+                    <div class="portfolio__content">
+                            <h2 class="portfolio__name" lang="en">Growing Business</h2>
+                        <p class="portfolio__description">Приложение</p>
+                    </div>
+                </article>
+            </a>
+        </li>
+</ul>
+</div>
+</section>
+</main>
+
+
+
+    <!-- Футер -->
+    <footer class="footer">
+    
+        <div class="footer__wrap">
+            <div class="footer__column">
+                <div class="logo__invert">
+                    <a href="" class="logo logo__invert" lang="en"><span class="logo__web">Web</span>Studio</a>
+                </div>
+                <address class="footer__adress">
+                    <p> г. Киев, пр-т Леси Украинки, 26 <br></p>
+                </address>
+                <div class="footer__mail"><a href="email:info@example.com" class="footer__link list">info@example.com</a>
+                    <br>
+                </div>
+                <div class="footer__tel"> <a href="tel:+380961111111" class="footer__link  list">+38 096 111 11 11</a></div>
+    
+            </div>
+            <div class="footer__column">
+                <b class="footer__social--b">присоединяйтесь</b>
+                <ul class="social">
+                    <li class="social__item--footer">
+                        <a href="" class="social__ellipce--footer">
+                            <svg class="social__icon--footer" width="20" height="20">
+                                <use href="./images/symbol-defs5.svg#instagram-foot"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item--footer">
+                        <a href="" class="social__ellipce--footer">
+                            <svg class="social__icon--footer" width="20" height="20">
+                                <use href="./images/symbol-defs5.svg#twitter-foot"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item--footer">
+                        <a href="" class="social__ellipce--footer">
+                            <svg class="social__icon--footer" width="20" height="20">
+                                <use href="./images/symbol-defs5.svg#facebook-foot"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="social__item--footer">
+                        <a href="" class="social__ellipce--footer">
+                            <svg class="social__icon--footer" width="20" height="20">
+                                <use href="./images/symbol-defs5.svg#linkedin-foot"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__column--input">
+                <b class="footer__social--b">Подпишитесь на рассылку</b>
+                <form class="form__subscription">
+                    <input class="form__mail" type="mail" name="mail" id="mail" placeholder="E-mail" />
+                    <label for="mail">
+                        <button class="form__btn--footer" type="submit">Подписаться
+                            <svg class="form__icon" Width="24px" Height="24px">
+                                <use href="./images/symbol-defs5.svg#icon-send"></use>
+                            </svg>
+                        </button></label>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
