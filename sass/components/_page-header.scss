@@ -125,6 +125,7 @@
   @media screen and (min-width: 768px) {
     display: block;
     align-items: center;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -206,15 +207,19 @@
 }
 
 .nav__icon {
-  display: inline-block;
-  align-self: center;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    align-self: center;
 
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: $primary-text-color;
-  margin-right: 10px;
-  padding: 0;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: $primary-text-color;
+    margin-right: 10px;
+    padding: 0;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .nav__email:hover &,
   .nav__email:focus &,
   .nav__tel:hover &,

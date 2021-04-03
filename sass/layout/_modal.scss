@@ -6,6 +6,10 @@
   height: 100%;
   background-color: rgba(47, 48, 58, 0.4);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
 
   &.is-hidden {
     opacity: 0;
@@ -49,11 +53,19 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-height: 580px;
-  min-width: 528px;
   border-radius: 4px;
-  padding: 40px 15px;
+
   background-color: #fff;
+  @media (min-width: 480px) {
+    max-width: 450px;
+    width: 100%;
+    padding: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 580px;
+    min-width: 528px;
+    padding: 40px 15px;
+  }
 
   &__form {
     width: 448px;
@@ -65,15 +77,14 @@
 
   &__title {
     font-family: inherit;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
-
     color: #212121;
   }
 
@@ -129,10 +140,13 @@
 
   &__label {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     margin-right: auto;
-    /* border: 1px solid #000; */
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
@@ -141,11 +155,14 @@
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  margin-left: 10px;
+
   background-image: url('../images/Vector.svg');
 
   border: $title-text-color;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
 
   .checkbox:checked + & {
     transform: scale(1.2);
@@ -167,7 +184,8 @@
 }
 
 .comment {
-  width: 100%;
+  display: block;
+  width: 370px;
   height: 120px;
   margin-top: 4px;
 
@@ -177,6 +195,9 @@
   resize: none;
   padding: 12px 16px;
   transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .comment:focus,
@@ -189,7 +210,7 @@
 }
 
 .modal__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -201,6 +222,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 
   &:hover {
     border: 1px solid $accent-color;
