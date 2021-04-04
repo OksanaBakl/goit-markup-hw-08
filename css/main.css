@@ -446,7 +446,7 @@ body.modal-open {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1299px) {
   .logo__invert {
     display: block;
     margin: 0 auto;
@@ -680,6 +680,11 @@ body.modal-open {
   .nav__email {
     margin-top: 302px;
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -698,7 +703,13 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .nav__tel {
     margin-bottom: 64px;
-    color: #2196f3;
+    color: #757575;
+    transform: translateY(-300%);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -747,8 +758,20 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
+  .nav__email:hover,
+  .nav__email:focus,
+  .nav__tel:hover,
+  .nav__tel:focus {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .social-menu {
-    text-decoration: none;
     display: flex;
     font-weight: 500;
     font-size: 18px;
@@ -764,14 +787,10 @@ body.modal-open {
   }
 }
 
-.social-menu__item:not(:last-child)::after {
-  display: inline-block;
-  flex-shrink: 0;
-  content: '';
-  width: 22px;
-  height: 1px;
-  background-color: #212121;
-  transform: rotate(-90deg);
+.social-menu__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .menu-button .icon-cross {
@@ -787,11 +806,17 @@ body.modal-open {
 }
 
 .menu-button {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  z-index: 2;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  transition-property: fill;
+  transition-duration: 250ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -815,10 +840,11 @@ body.modal-open {
     display: none;
     position: absolute;
     border: none;
-    top: 100%;
+    top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
-    height: 796px;
+    height: auto;
     background-color: #fff;
     border: none;
     padding: 48px 40px;
@@ -1130,7 +1156,7 @@ body.modal-open {
   .hero {
     width: 100%;
     height: 400px;
-    max-width: 480px;
+    max-width: 767px;
     padding: 118px 60px;
   }
 }
@@ -1667,7 +1693,7 @@ body.modal-open {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__wrap {
     text-align: center;
   }

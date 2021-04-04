@@ -204,6 +204,11 @@
   @media screen and (max-width: 767px) {
     margin-top: 302px;
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
@@ -215,7 +220,13 @@
 .nav__tel {
   @media screen and (max-width: 767px) {
     margin-bottom: 64px;
-    color: $accent-color;
+    color: $primary-text-color;
+    transform: translateY(-300%);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -257,11 +268,19 @@
 .nav__tel:hover,
 .nav__tel:focus {
   color: $accent-color;
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+  }
 }
 
 .social-menu {
   @media screen and (max-width: 767px) {
-    text-decoration: none;
+    // text-decoration: none;
     display: flex;
     font-weight: 500;
     font-size: 18px;
@@ -274,12 +293,8 @@
   }
 }
 
-.social-menu__item:not(:last-child)::after {
-  display: inline-block;
-  flex-shrink: 0;
-  content: '';
-  width: 22px;
-  height: 1px;
-  background-color: $title-text-color;
-  transform: rotate(-90deg);
+.social-menu__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
