@@ -1,5 +1,5 @@
 .section__feature {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -32,7 +32,7 @@
   color: $title-text-color;
   text-transform: uppercase;
   margin-top: 30px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     @include font-title;
   }
   @media screen and (min-width: 768px) {
@@ -71,7 +71,7 @@
   background-color: $background-light;
   @include centeredFlex;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
     height: 120px;
   }
