@@ -1,12 +1,15 @@
 .section__feature {
   @media screen and (min-width: 480px) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 0px;
   }
 }
 .visually-hidden {
@@ -48,6 +51,10 @@
 }
 
 .feature__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
@@ -78,11 +85,11 @@
     margin-bottom: 30px;
     border-radius: 4px;
   }
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 20px;
-    }
-  }
+  // &:not(:last-child) {
+  //   @media screen and (max-width: 767px) {
+  //     margin-bottom: 20px;
+  //   }
+  // }
 }
 .feature__image--svg {
   width: 70px;
