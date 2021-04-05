@@ -2050,6 +2050,12 @@ body.modal-open {
   padding-right: 24px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__content {
+    flex-grow: 1;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio__item:nth-child(3n) {
     margin-right: 0;
@@ -2113,6 +2119,13 @@ body.modal-open {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   text-decoration: none;
   display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .portfolio__link:hover,
