@@ -1,8 +1,7 @@
 .section__feature {
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -71,17 +70,17 @@
   background-color: $background-light;
   @include centeredFlex;
 
-  @media screen and (max-width: 767px) {
-    width: 450px;
-    height: 120px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 120px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   width: 450px;
+  //   height: 120px;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  //   height: 120px;
+  // }
   @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 120px;
+    // width: 270px;
+    // height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
   }
