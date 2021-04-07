@@ -458,7 +458,7 @@ body.modal-open {
   position: relative;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 340px) {
   .header__line {
     display: flex;
     align-items: center;
@@ -1730,18 +1730,6 @@ body.modal-open {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 1199px) {
-  .footer__wrap {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__wrap {
-    text-align: left;
-  }
-}
-
 .footer {
   background: #2f303a;
   padding-top: 60px;
@@ -1766,12 +1754,19 @@ body.modal-open {
   font-style: normal;
 }
 
+@media screen and (min-width: 340px) {
+  .footer__wrap {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
+    text-align: center;
   }
 }
 
@@ -1779,6 +1774,7 @@ body.modal-open {
   .footer__wrap {
     display: flex;
     flex-wrap: nowrap;
+    text-align: left;
     align-items: baseline;
     margin-left: auto;
     margin-right: auto;
