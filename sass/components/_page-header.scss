@@ -293,8 +293,17 @@
   }
 }
 
+.social-menu__link {
+  font-weight: 500;
+  font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (480 - 300)));
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
 .social-menu__item:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  color: $accent-color;
 }
