@@ -179,7 +179,7 @@
     background-color: $accent-color;
     background-image: url('../images/check.svg');
     // @include generateIcons(check);
-    background-size: contain;
+    background-size: cover;
     background-origin: border-box;
   }
 }
