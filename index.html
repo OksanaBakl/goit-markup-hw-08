@@ -592,18 +592,19 @@
     <footer class="footer">
     
         <div class="footer__wrap">
-            <div class="footer__column">
-                <div class="logo__invert">
-                    <a href="" class="logo logo__invert" lang="en"><span class="logo__web">Web</span>Studio</a>
-                </div>
-                <address class="footer__adress">
+            <div class="footer__info">
+                <div class="footer__column">
+                    <div class="logo__invert">
+                        <a href="" class="logo logo__invert" lang="en"><span class="logo__web">Web</span>Studio</a>
+                    </div>
+                    <address class="footer__adress">
                     <p> г. Киев, пр-т Леси Украинки, 26 <br></p>
                 </address>
                 <div class="footer__mail"><a href="email:info@example.com" class="footer__link list">info@example.com</a>
                     <br>
                 </div>
                 <div class="footer__tel"> <a href="tel:+380961111111" class="footer__link  list">+38 096 111 11 11</a></div>
-    
+                
             </div>
             <div class="footer__column">
                 <b class="footer__social--b">присоединяйтесь</b>
@@ -639,18 +640,26 @@
                     </li>
                 </ul>
             </div>
-    
-            <div class="footer__column--input">
-                <b class="footer__social--b">Подпишитесь на рассылку</b>
+        </div>
+            
+            <div class="footer__subscribe">
+                <label for="mail">
+                    <b class="footer__social--b">Подпишитесь на рассылку</b>
+                </label>
                 <form class="form__subscription">
-                    <input class="form__mail" type="mail" name="mail" id="mail" placeholder="E-mail" />
-                    <label for="mail">
+                    <div>
+                        <input class="form__mail" type="mail" name="mail" id="mail" placeholder="E-mail" />
+                    </div>
+                    <div>
+                        
                         <button class="form__btn--footer" type="submit">Подписаться
                             <svg class="form__icon" Width="24px" Height="24px">
                                 <use href="./images/symbol-defs5.svg#icon-send"></use>
                             </svg>
-                        </button></label>
-                </form>
+                        </button>
+                    </div>
+                 </form>
+               
             </div>
         </div>
     </footer>

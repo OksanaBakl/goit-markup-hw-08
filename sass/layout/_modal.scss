@@ -259,7 +259,10 @@
 .modal__input:hover ~ .modal__icon {
   fill: $accent-color;
 }
-.modal__input:focus .modal__label,
-.modal__input:hover .modal__label {
+// .modal__input--wrapper:focus .modal__label,
+// .modal__input--wrapper:hover .modal__label {
+//   fill: $accent-color;
+// }
+.modal__label:focus-within {
   fill: $accent-color;
 }
