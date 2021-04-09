@@ -795,7 +795,7 @@ body.modal-open {
 
 .social-menu__link {
   font-weight: 500;
-  font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (480 - 300)));
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196f3;
