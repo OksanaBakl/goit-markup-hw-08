@@ -61,11 +61,12 @@
   // min-height: 580px;
   // min-width: 528px;
   border-radius: 4px;
-  padding: 40px 15px;
+  padding: 40px;
   background-color: #fff;
   opacity: 1;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 480px) {
+    position: absolute;
     right: 0;
     left: 0;
     margin: auto;
@@ -76,7 +77,7 @@
     min-height: 580px;
     max-width: 528px;
     width: 100%;
-    padding: 40px 15px;
+    // padding: 40px 15px;
   }
   &__form {
     // width: 448px;
@@ -154,10 +155,14 @@
 
   &__label {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     margin-right: auto;
     /* border: 1px solid #000; */
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
@@ -166,11 +171,14 @@
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  margin-left: 10px;
   background-image: url('../images/Vector.svg');
 
   border: $title-text-color;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+    margin-left: 10px;
+  }
 
   .checkbox:checked + & {
     transform: scale(1.2);
