@@ -37,12 +37,12 @@
   background-color: #ffffff;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 4 * 15px) / 2);
+    // width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: auto;
-    margin-left: $flex-gap;
+    // margin-left: $flex-gap;
   }
 
   &:first-child {

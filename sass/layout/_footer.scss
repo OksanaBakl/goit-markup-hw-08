@@ -119,11 +119,12 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
+    width: 450px;
   }
 }
 
 .form__mail {
-  width: 95%;
+  // width: 95%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -138,6 +139,13 @@
   color: rgba(255, 255, 255, 0.3);
   // margin-right: 15px;
   // margin-left: 15px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 95%;
+  }
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
@@ -188,4 +196,8 @@
   stroke: currentColor;
   fill: #fff;
   padding: 0;
+}
+.mail__wrap {
+  display: flex;
+  flex-direction: column;
 }

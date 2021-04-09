@@ -10,8 +10,8 @@
 }
 .menu-button {
   position: absolute;
-  top: 18px;
-  right: 22px;
+  top: 10px;
+  right: 10px;
   z-index: 2;
   display: inline-flex;
   margin: 0;
@@ -46,9 +46,13 @@
     z-index: 1;
     width: 100%;
     height: auto;
+    height: 100vh;
     background-color: #fff;
     border: none;
     padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     // box-shadow: 0px 4px 4px rgb(0, 0, 0, 15%);
     &.is-open {
       transform: translateY(0);

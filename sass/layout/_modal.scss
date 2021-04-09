@@ -59,6 +59,7 @@
   border-radius: 4px;
   max-width: 450px;
   background-color: #fff;
+  padding: 40px;
   @media screen and (min-width: 480px) {
     position: absolute;
     right: 0;
@@ -66,14 +67,14 @@
     margin: auto;
     max-width: 450px;
     width: 100%;
-    // padding: 40px;
+    
   }
 
   @media screen and (min-width: 1200px) {
     min-height: 580px;
     max-width: 528px;
     width: 100%;
-    // padding: 40px 15px;
+    padding: 40px 15px;
   }
 
   &__form {

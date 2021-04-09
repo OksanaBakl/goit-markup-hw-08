@@ -22,14 +22,20 @@
                            
             <nav class="header__nav">
                 <a href="" class="logo" lang="en"><span class="logo__web">Web</span>Studio</a>
-                <div class="menu-container" id="menu-container" data-menu>
+    <div class="menu-container" id="menu-container" data-menu>
                 <ul class="nav">
                     <li class="nav__item"><a href="" class="nav__link current">Студия</a></li>
                     <li class="nav__item"><a href="./portfolio.html" class="nav__link ">Портфолио</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                 </ul>
            
-            <div class="contact">
+                <div class="contact">
+                <ul class="social-menu list">
+                    <li class="social-menu__item"><a href="" class="social-menu__link link">Instagram</a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link link">Twitter</a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link link">Facebook</a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link link">LinkedIn</a></li>
+                </ul>
                 <ul class="contact">
                     <li class="contact__item">
                         <div>
@@ -51,20 +57,14 @@
                     <li class=".contact__modal--item"><a href="email:info@devstudio.com" class="modal__email list">
                     info@devstudio.com</a></li>
                 </ul> -->
-                <ul class="social-menu list">
-                    <li class="social-menu__item"><a href="" class="social-menu__link link">Instagram</a></li>
-                    <li class="social-menu__item"><a href="" class="social-menu__link link">Twitter</a></li>
-                    <li class="social-menu__item"><a href="" class="social-menu__link link">Facebook</a></li>
-                    <li class="social-menu__item"><a href="" class="social-menu__link link">LinkedIn</a></li>
-                </ul>
                 </div>
                 </div>
 
                 </nav>
                 <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                     <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                        <use class="icon-cross" href="./images/symbol-defs5.svg#close-black-18dp-2-1-1"></use>
-                        <use class="icon-menu" href='./images/symbol-defs5.svg#menu_24px'></use>
+                        <use class="icon-cross" href="./images/symbol-defs5.svg#close_40px"></use>
+                        <use class="icon-menu" href='./images/symbol-defs5.svg#menu_40px'></use>
                     </svg>
                 </button>
             </div>
@@ -78,7 +78,6 @@
             <button data-modal-open type="button" class="button current" >Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <div class="form"> 
                     <b class="modal__title"> Оставьте свои данные, мы вам перезвоним</b>
                     <div class="modal__window">
 
@@ -111,7 +110,7 @@
     </span>
 </label>
 <label class="modal__label" for="comment">Kоментарий</label>
-<textarea class=" comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+<textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
 </div>
         
         <label class="field__checkbox">
@@ -119,16 +118,15 @@
             <span class="checkbox__icon"></span>
             <span class="checkbox__label">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="policy link" href="">Условия договора</a></span>
         </label>
-<div class="button__container">
-<button class="form__btn" type="submit">Отправить</button></div>
+
+<button class="form__btn" type="submit">Отправить</button>
 </div>
-</form>
+<div class="button__container"></div>
 <button data-modal-close class="close"><svg class="close__icon" width="20" height="20">
         <use href="./images/symbol-defs5.svg#close-black-18dp-2-1-1"></use>
     </svg></button> 
         </div>
-
-                </div>
+</form>
                 </div>
             </div>
             
