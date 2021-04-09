@@ -264,5 +264,7 @@
 //   fill: $accent-color;
 // }
 .modal__label:focus-within {
-  fill: $accent-color;
+  @media screen and (max-width: 767px) {
+    color: $accent-color;
+  }
 }

@@ -1722,8 +1722,10 @@ body.modal-open {
   fill: #2196f3;
 }
 
-.modal__label:focus-within {
-  fill: #2196f3;
+@media screen and (max-width: 767px) {
+  .modal__label:focus-within {
+    color: #2196f3;
+  }
 }
 
 .footer {
